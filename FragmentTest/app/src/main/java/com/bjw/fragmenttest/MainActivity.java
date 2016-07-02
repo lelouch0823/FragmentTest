@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button button = (Button) findViewById(R.id.button);
+        Button button = (Button) findViewById(R.id.lanbutton);
         button.setOnClickListener(this);
 
     }
@@ -23,12 +23,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.button:
+            case R.id.lanbutton:
                 Logger.d("hello");
                 AnotherRightFragment anotherRightFragment = new AnotherRightFragment();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
-                transaction.replace(R.id.right_layout, anotherRightFragment);
+                transaction.replace(R.id.right_fragment, anotherRightFragment);
                 transaction.addToBackStack(null);
                 transaction.commit();
                 break;
