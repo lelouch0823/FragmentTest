@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#68c163">
+    android:background="#6788cf">
 
     <TextView
         android:layout_width="wrap_content"
@@ -10,6 +10,7 @@
         android:layout_gravity="center_horizontal"
         android:id="@+id/text"
         android:text="This is another right fragment"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:background="#decfcf"/>
 
 </LinearLayout>
