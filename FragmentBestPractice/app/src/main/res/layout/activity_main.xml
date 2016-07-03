@@ -12,5 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.bjw.fragmentbestpractice.NewsTitleFragment"
-        android:id="@+id/news_title_fragment"/>
+        android:id="@+id/news_title_fragment"
+        tools:layout="@layout/news_item" />
 </LinearLayout>

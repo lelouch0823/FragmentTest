@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Window;
 
-;
+;import com.orhanobut.logger.Logger;
 
 //import android.support.v4.app.FragmentActivity;
 
@@ -30,7 +30,9 @@ public class NewsContentActivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.new_content);
         String newsTitle = getIntent().getStringExtra("new_title");
+        Logger.d("hello");
         String newsContent = getIntent().getStringExtra("news_content");
+        Logger.d("hello");
 
         NewsContentFragment newsContentFragment = (NewsContentFragment)getFragmentManager().findFragmentById(R.id.news_content_fragment);
         newsContentFragment.refresh(newsTitle, newsContent);

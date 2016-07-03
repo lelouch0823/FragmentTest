@@ -3,7 +3,6 @@ package com.bjw.fragmentbestpractice;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +28,6 @@ public class NewsTitleFragment extends Fragment implements AdapterView.OnItemCli
         adapter = new NewsArrayAdapter(activity, R.layout.news_item, newsList);
     }
 
-    @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.news_title_frag, container, false);
@@ -65,6 +63,7 @@ public class NewsTitleFragment extends Fragment implements AdapterView.OnItemCli
         if (isTwoPane) {
             NewsContentFragment newsContentFragment =
                     (NewsContentFragment) getFragmentManager().findFragmentById(R.id.news_content_fragment);
+            newsContentFragment.refresh(news.getTitle(),news.getContent());
         } else {
             NewsContentActivity.actionStart(getActivity(), news.getTitle(), news.getContent());
         }
