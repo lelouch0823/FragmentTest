@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ActivityBestPractice</string>
+    <string name="account">Account:</string>
+    <string name="input_you_account">Input you account</string>
+    <string name="password">password</string>
+    <string name="input_you_password">Input you password</string>
+    <string name="login">Login</string>
+    <string name="send_force_offline_broadcast">Send force offline broadcast</string>
+</resources>

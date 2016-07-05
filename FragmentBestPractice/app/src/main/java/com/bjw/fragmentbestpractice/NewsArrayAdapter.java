@@ -20,6 +20,7 @@ public class NewsArrayAdapter extends ArrayAdapter{
     }
 
     @Override
+    //
     public View getView(int position, View convertView, ViewGroup parent) {
         News news = (News) getItem(position);
         View view;
